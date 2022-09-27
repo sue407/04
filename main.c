@@ -5,17 +5,14 @@
 
 int main(int argc, char *argv[]) {
 
-	int a, b;
-	printf("inpput one integer :");
-	scanf("%d", &a);
-	printf("inpput another integer :");
-	scanf("%d", &b);
-
-	printf("+ result is %d\n", a+b);
-	printf("- result is %d\n", a-b);
-	printf("* result is %d\n", a*b);
-	printf("/ result is %d\n", a/b);
-	printf("%% result is %d\n", a%b);
+	int a;
+	int result;
+	
+	printf("input year :");
+	scanf("%i", &a);
+	
+	result = (a%4 == 0);
+	printf("is the year %i the leap year? : %d", a, result);
 
 	return 0;
 }
